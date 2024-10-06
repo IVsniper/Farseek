@@ -22,7 +22,11 @@ tasks.withType(ScalaCompile) {
     scalaCompileOptions.additionalParameters = ["-explaintypes", "-feature"]
 }
 
-apply plugin: "com.wynprice.cursemaven"
+repositories {
+    maven {
+        url "https://cursemaven.com"
+    }
+}
 
 ext.coreModClass = "farseek.core.FarseekCoreMod"
 def jvmArgs = "-Dfml.coreMods.load=$coreModClass"
