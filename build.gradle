@@ -3,11 +3,11 @@ buildscript {
         jcenter()
         maven { url "http://files.minecraftforge.net/maven" }
         maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://cursemaven.com" }
     }
     dependencies {
         classpath group: "net.minecraftforge.gradle",        name: "ForgeGradle",          version: "2.3-SNAPSHOT"
         classpath group: "gradle.plugin.com.matthewprenger", name: "CurseGradle",          version: "+", changing: true
-        classpath group: "com.wynprice.cursemaven",          name: "CurseMaven",           version: "+", changing: true
         classpath group: "co.riiid",                         name: "gradle-github-plugin", version: "+", changing: true
     }
 }
@@ -15,7 +15,7 @@ buildscript {
 apply from: "common.gradle"
 
 dependencies {
-    compileOnly "curse.maven:open-terrain-generator-1.12.2-v9.0:3093121"
+    compileOnly "curse.maven:open-terrain-generator-265894:5286210"
 }
 
 jar.manifest {
