@@ -8,7 +8,7 @@ buildscript {
     dependencies {
         classpath group: "net.minecraftforge.gradle",        name: "ForgeGradle",          version: "2.3-SNAPSHOT"
         classpath group: "gradle.plugin.com.matthewprenger", name: "CurseGradle",          version: "+", changing: true
-        classpath group: "co.riiid",                         name: "gradle-github-plugin", version: "+", changing: true
+        classpath group: "co.riiid.gradle",                         name: "co.riiid.gradle.gradle.plugin", version: "+", changing: true
     }
 }
 
